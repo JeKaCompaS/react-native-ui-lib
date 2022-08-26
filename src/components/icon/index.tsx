@@ -4,7 +4,7 @@ import {Image, ImageProps, StyleSheet} from 'react-native';
 import {asBaseComponent, BaseComponentInjectedProps, MarginModifiers, Constants} from '../../commons/new';
 import {getAsset, isSvg} from '../../utils/imageUtils';
 import SvgImage from '../svgImage';
-import FastImage from 'react-native-fast-image'
+import FastImage from 'react-native-fast-image';
 
 export type IconProps = ImageProps &
   MarginModifiers & {
