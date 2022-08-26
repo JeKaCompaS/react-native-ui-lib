@@ -101,6 +101,7 @@
     "react-autobind": "^1.0.6",
     "react-dom": "^15.4.2",
     "react-native": "0.68.2",
+    "react-native-fast-image": "^8.5.11",
     "react-native-gesture-handler": "2.5.0",
     "react-native-haptic-feedback": "^1.11.0",
     "react-native-linear-gradient": "2.5.6",

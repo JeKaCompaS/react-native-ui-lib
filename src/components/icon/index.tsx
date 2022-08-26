@@ -4,6 +4,7 @@ import {Image, ImageProps, StyleSheet} from 'react-native';
 import {asBaseComponent, BaseComponentInjectedProps, MarginModifiers, Constants} from '../../commons/new';
 import {getAsset, isSvg} from '../../utils/imageUtils';
 import SvgImage from '../svgImage';
+import FastImage from 'react-native-fast-image'
 
 export type IconProps = ImageProps &
   MarginModifiers & {
@@ -53,7 +54,7 @@ const Icon = (props: Props) => {
   return isSvg(source) ? (
     <SvgImage data={source} {...props}/>
   ) : (
-    <Image
+    <FastImage
       {...others}
       source={iconSource}
       style={[style, margins, iconSize, shouldFlipRTL && styles.rtlFlipped, !!tintColor && {tintColor}]}
